@@ -7,7 +7,8 @@ import (
 
 func main() {
 	fmt.Println("Started")
-	var number uint
+	var number int
 	fmt.Scan(&number)
-	fmt.Println(Lesson1.ToPrimeMultipliers(number))
+	//fmt.Println(Lesson1.FibonacciNonRecursive(number))
+	fmt.Println(Lesson1.IsPrime(number))
 }
