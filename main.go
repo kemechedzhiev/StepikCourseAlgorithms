@@ -1,18 +1,18 @@
 package main
 
 import (
-	"StepikCourseAlgorithms/Lesson1"
+	"StepikCourseAlgorithms/Lesson2"
 	"fmt"
 )
 
 func main() {
 	fmt.Println("Started")
-	var number uint
-	//var base float64
-	//fmt.Scan(&base)
-	fmt.Scan(&number)
-	//fmt.Println(Lesson1.FibonacciNonRecursive(number))
-	//fmt.Println(Lesson1.IsPrime(number))
-	//fmt.Println(Lesson1.Power(base, number))
-	fmt.Println(Lesson1.ToPrimeMultipliers(number))
+	var size1, size2 uint
+	fmt.Scan(&size1)
+	arr1 := make([]int, size1)
+	Lesson2.FillArray(&arr1, size1)
+	fmt.Scan(&size2)
+	arr2 := make([]int, size2)
+	Lesson2.FillArray(&arr2, size2)
+	fmt.Println(Lesson2.ArrayBinarySearch(size1, size2, &arr1, &arr2))
 }
