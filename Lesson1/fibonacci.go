@@ -1,6 +1,6 @@
 package Lesson1
 
-// It's an obviously non-effective algorithm implemented just for the comparison.
+// TODO Написать реализацию рекурсивного алгоритма
 func FibonacciRecursive(number uint) uint {
 	if number == 0 || number == 1 {
 		return number
@@ -8,7 +8,7 @@ func FibonacciRecursive(number uint) uint {
 	return FibonacciRecursive(number-1) + FibonacciRecursive(number-2)
 }
 
-// Much more effective algorithm, in fact, O(n).
+// TODO Написать реализацию более эффективного алгоритма, O(n)
 func FibonacciNonRecursive(number uint) uint {
 	if number == 0 {
 		return 1
@@ -23,3 +23,6 @@ func FibonacciNonRecursive(number uint) uint {
 	}
 	return current
 }
+
+// TODO Даны целые числа 1≤n≤10^18 и 2≤m≤10^5, необходимо
+//  найти остаток от деления n-го числа Фибоначчи на m.
