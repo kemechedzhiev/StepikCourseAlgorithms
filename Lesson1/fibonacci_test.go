@@ -32,9 +32,9 @@ func TestModNFibToM(t *testing.T) {
 
 func TestFindPisano(t *testing.T) {
 	var delimiter uint
-	delimiter = 4
+	delimiter = 5
 	result, pisanoArr := findPisano(delimiter)
-	if result != 6 {
+	if result != 20 {
 		t.Error("Wrong answer! Expected 6, got ", result)
 	}
 	if (*pisanoArr)[0] != 0 && (*pisanoArr)[1] != 1 && (*pisanoArr)[2] != 1 &&

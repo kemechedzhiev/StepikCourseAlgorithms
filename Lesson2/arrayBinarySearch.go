@@ -17,7 +17,7 @@ func ArrayBinarySearch(size1, size2 uint, arr1, arr2 *[]int) *[]uint {
 	var counter uint
 	result := make([]uint, size2)
 	for counter = 0; counter < size2; counter++ {
-		result[counter] = counter
+
 	}
 	return &result
 }
